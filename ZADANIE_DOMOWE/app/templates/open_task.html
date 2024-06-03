@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}My Tasks{% endblock %}
+
+{% block content %}
+<h1>My Task: {{ task.title }}</h1>
+<p> {{ task.description|safe  }}</p>
+
+{% endblock %}
